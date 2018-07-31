@@ -5,6 +5,7 @@ import 'pages/TweetsListPage.dart';
 import 'pages/DiscoveryPage.dart';
 import 'pages/MyInfoPage.dart';
 import 'pages/NewsDetailPage.dart';
+import 'package:flutter_osc/widgets/MyDrawer.dart';
 
 void main() {
   runApp(new MyApp());
@@ -141,11 +142,7 @@ class MyOSCClientState extends State<MyApp> {
           },
         ),
         // drawer属性用于为当前页面添加一个侧滑菜单
-        drawer: new Drawer(
-          child: new Center(
-            child: new Text("this is a drawer")
-          ),
-        ),
+        drawer: new MyDrawer()
       ),
     );
   }
